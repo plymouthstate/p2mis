@@ -129,18 +129,18 @@ pre:hover {
 .post.tag-codreview,
 .post.tag-codereview {
 	background-color:#000;
-	background-image:url(/webapp/time/wp-content/uploads/2010/04/binary_black.gif);
+	background-image:url(i/binary_black.gif);
 	background-repeat:repeat-x;
 }
 
 .post.tag-codereview-complete{
 	background-color: #fff;
-	background-image:url(/webapp/time/wp-content/uploads/2011/01/codereview-complete.png);
+	background-image:url(i/codereview-complete.png);
 	background-repeat:repeat-x;
 }
 
 .post.tag-codreview{
-  background-image: url(http://www.plymouth.edu/webapp/time/wp-content/uploads/2010/07/cod.jpg);
+  background-image: url(i/cod.jpg);
 }
 
 .post.tag-codereview strong { color: red; }
