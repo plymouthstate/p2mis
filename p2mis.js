@@ -73,7 +73,7 @@ $('ul#postlist .tag-protips.tag-command-line-protip, ul#postlist .tag-protips.ta
 	.end()
 	.find('.accent')
 	.attr('title', 'Command Line Pro Tip')
-	.html('&#10026;'); // circled star
+	.html('&#9000;'); // keyboard
 
 $('ul#postlist .tag-protips.tag-database-protip, ul#postlist .tag-protips.tag-oracle-protip, ul#postlist .tag-protips.tag-mysql-protip')
 	.find('.what')
@@ -90,6 +90,14 @@ $('ul#postlist .tag-protips.tag-vim-protip')
 	.find('.accent')
 	.attr('title', 'VIM Pro Tip')
 	.html('&#9998;'); // pencil
+
+$('ul#postlist .tag-protips.tag-git-protip')
+	.find('.what')
+	.html('Git')
+	.end()
+	.find('.accent')
+	.attr('title', 'Git Pro Tip')
+	.html('&#10026;'); // circled star
 
 $('ul#postlist .tag-protips.tag-warning')
 	.find('.what')
