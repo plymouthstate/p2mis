@@ -40,11 +40,11 @@ code, pre, tt {
 	padding-right: 14px;
 }
 
-.tag-codereview code, .tag-codereview pre, .tag-codereview tt{
+.post.tag-codereview code, .post.tag-codereview pre, .post.tag-codereview tt{
 	background: #222;
 }
 
-.tag-protips {
+.post.tag-protips {
 	background: #ebffd8;
 	background-image: linear-gradient(bottom, #EBFFD8 10%, #DFFFBF 90%);
 	background-image: -o-linear-gradient(bottom, #EBFFD8 10%, #DFFFBF 90%);
@@ -71,36 +71,36 @@ pre:hover {
 	overflow: auto;
 }
 
-.tag-codreview,
-.tag-codereview {
+.post.tag-codreview,
+.post.tag-codereview {
 	background-color: #fee;
 }
 
-.tag-codreview,
-.tag-codereview {
+.post.tag-codreview,
+.post.tag-codereview {
 	background-color:#000;
 	background-image:url(/webapp/time/wp-content/uploads/2010/04/binary_black.gif);
 	background-repeat:repeat-x;
 }
 
-.tag-codereview-complete{
+.post.tag-codereview-complete{
 	background-color: #fff;
 	background-image:url(/webapp/time/wp-content/uploads/2011/01/codereview-complete.png);
 	background-repeat:repeat-x;
 }
 
-.tag-codreview{
+.post.tag-codreview{
   background-image: url(http://www.plymouth.edu/webapp/time/wp-content/uploads/2010/07/cod.jpg);
 }
 
-.tag-codereview strong { color: red; }
+.post.tag-codereview strong { color: red; }
 
-.tag-codreview blockquote,
-.tag-codereview blockquote {
+.post.tag-codreview blockquote,
+.post.tag-codereview blockquote {
 	background-color: transparent;
 }
 
-.tag-codereview.category-quote blockquote p {
+.post.tag-codereview.category-quote blockquote p {
 	background-color: #000;
 	border: 1px dotted #333;
 	text-shadow: 0 1px 0 #222;
@@ -111,18 +111,18 @@ pre:hover {
 	border: 1px solid #0f0;
 }
 
-.tag-codreview a, 
-.tag-codreview a:visited, 
-.tag-codreview h1 a:visited, 
-.tag-codreview a:active, 
+.post.tag-codreview a, 
+.post.tag-codreview a:visited, 
+.post.tag-codreview h1 a:visited, 
+.post.tag-codreview a:active, 
 #main .tag-codreview .selected .actions a, 
 #main .tag-codreview .selected .actions a:link, 
 #main .tag-codreview .selected .actions a:visited, 
 #help .tag-codreview dt,
-.tag-codereview a, 
-.tag-codereview a:visited, 
-.tag-codereview h1 a:visited, 
-.tag-codereview a:active, 
+.post.tag-codereview a, 
+.post.tag-codereview a:visited, 
+.post.tag-codereview h1 a:visited, 
+.post.tag-codereview a:active, 
 #main .tag-codereview .selected .actions a, 
 #main .tag-codereview .selected .actions a:link, 
 #main .tag-codereview .selected .actions a:visited, 
@@ -130,11 +130,11 @@ pre:hover {
 	color: #0f0;
 }
 
-.tag-codreview a:hover, 
-.tag-codreview h1 a:hover, 
+.post.tag-codreview a:hover, 
+.post.tag-codreview h1 a:hover, 
 #main .tag-codreview .selected .actions a:hover,
-.tag-codereview a:hover, 
-.tag-codereview h1 a:hover, 
+.post.tag-codereview a:hover, 
+.post.tag-codereview h1 a:hover, 
 #main .tag-codereview .selected .actions a:hover{
 	color: #0f0;
 }
@@ -144,8 +144,8 @@ pre:hover {
 	color: #999;
 }
 
-.tag-codreview .postcontent,
-.tag-codereview .postcontent{
+.post.tag-codreview .postcontent,
+.post.tag-codereview .postcontent{
 	color: #555;
 }
 
