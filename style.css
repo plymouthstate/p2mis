@@ -44,7 +44,9 @@ code, pre, tt {
 	background: #222;
 }
 
-.post.tag-protips {
+/* begin protips */
+
+.post.tag-protip {
 	background: #ebffd8;
 	background-image: linear-gradient(bottom, #EBFFD8 10%, #DFFFBF 90%);
 	background-image: -o-linear-gradient(bottom, #EBFFD8 10%, #DFFFBF 90%);
@@ -60,6 +62,54 @@ code, pre, tt {
 	padding-left: 40px;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
 }
+
+/* default accent */
+.tag-protip .accent:before {
+	content: "\27A0";
+}
+
+.tag-protip.tag-vim .what:before {
+	content: "VIM"
+}
+
+.tag-protip.tag-vim .accent:before {
+	content: "\270E";
+}
+
+.tag-protip.tag-git .what:before {
+	content: "Git"
+}
+
+.tag-protip.tag-git .accent:before {
+	content: "\272A";
+}
+
+.tag-protip.tag-unix .what:before,
+.tag-protip.tag-linux .what:before {
+	content: "Command Line"
+}
+
+.tag-protip.tag-unix .accent:before,
+.tag-protip.tag-linux .accent:before {
+	content: "\2328"
+}
+
+.tag-protip.tag-php .what:before {
+	content: "PHP"
+}
+
+.tag-protip.tag-php .accent:before {
+}
+
+.tag-protip.tag-warning .what:before {
+	content: "Warning";
+}
+
+.tag-protip.tag-warning .accent:before {
+	content: "\2620";
+}
+
+/* end protips */
 
 pre {
 	padding-bottom: 0.5em;

@@ -60,51 +60,6 @@ var a = $('<a href="#">Enable desktop notifications</a>.').bind('click', functio
 });
 $('#footer p').append(a);
 
-$('ul#postlist .tag-protips').prepend('<h2 class="protip"><span class="accent">&#10144;</span> Ultra Awesome <span class="what"></span> Pro Tip:</h2>');
-$('ul#postlist .tag-protips.tag-php-protip')
-	.find('.what')
-	.html('PHP')
-	.end()
-	.attr('title', 'PHP Pro Tip');
-
-$('ul#postlist .tag-protips.tag-command-line-protip, ul#postlist .tag-protips.tag-unix-protip, ul#postlist .tag-protips.tag-linux-protip')
-	.find('.what')
-	.html('Command Line')
-	.end()
-	.find('.accent')
-	.attr('title', 'Command Line Pro Tip')
-	.html('&#9000;'); // keyboard
-
-$('ul#postlist .tag-protips.tag-database-protip, ul#postlist .tag-protips.tag-oracle-protip, ul#postlist .tag-protips.tag-mysql-protip')
-	.find('.what')
-	.html('Database')
-	.end()
-	.find('.accent')
-	.attr('title', 'Database Pro Tip')
-	.html('&#9638;'); // hash box
-
-$('ul#postlist .tag-protips.tag-vim-protip')
-	.find('.what')
-	.html('VIM')
-	.end()
-	.find('.accent')
-	.attr('title', 'VIM Pro Tip')
-	.html('&#9998;'); // pencil
-
-$('ul#postlist .tag-protips.tag-git-protip')
-	.find('.what')
-	.html('Git')
-	.end()
-	.find('.accent')
-	.attr('title', 'Git Pro Tip')
-	.html('&#10026;'); // circled star
-
-$('ul#postlist .tag-protips.tag-warning')
-	.find('.what')
-	.append(' Warning')
-	.end()
-	.find('.accent')
-	.attr('title', 'Pro Warning')
-	.html('&#9760;'); // skull and crossbones
+$('ul#postlist .tag-protip').prepend('<h2 class="protip"><span class="accent"></span> Ultra Awesome <span class="what"></span> Pro Tip:</h2>');
 
 })(jQuery);
