@@ -1,0 +1,173 @@
+/*
+Theme Name:     P2 for MIS
+Theme URI:      http://plymouth.edu/
+Description:    P2 customizations for the MIS team.
+Author:         Adam Backstrom
+Author URI:     http://sixohthee.com/
+Template:       p2
+Version:        1.0.0
+*/
+
+@import url("../p2/style.css");
+
+body {
+	background-image: url('i/pattern-grunge-squares.jpg');
+	background-repeat: repeat;
+	background-position: top left;
+	background-attachment: scroll;
+}
+
+code, pre { 
+	font-size: 1em; 
+}
+
+code, pre, tt { 
+	background: #eee;
+	font-family: Monaco, Consolas, "Courier New", monospace; 
+	padding: 0.15em 0.2em;
+	border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+}
+
+#main ul#postlist {
+	margin-left: -14px;
+	margin-right: -14px;
+}
+
+#main ul#postlist .post {
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.tag-codereview code, .tag-codereview pre, .tag-codereview tt{
+	background: #222;
+}
+
+.tag-protips {
+	background: #ebffd8;
+	background-image: linear-gradient(bottom, #EBFFD8 10%, #DFFFBF 90%);
+	background-image: -o-linear-gradient(bottom, #EBFFD8 10%, #DFFFBF 90%);
+	background-image: -moz-linear-gradient(bottom, #EBFFD8 10%, #DFFFBF 90%);
+	background-image: -webkit-linear-gradient(bottom, #EBFFD8 10%, #DFFFBF 90%);
+	background-image: -ms-linear-gradient(bottom, #EBFFD8 10%, #DFFFBF 90%);
+}
+
+#main .post .protip {
+	font-weight: bold;
+	margin-left: -14px;
+	margin-right: -14px;
+	padding-left: 40px;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+}
+
+pre {
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	overflow: hidden;
+}
+
+pre:hover {
+	overflow: auto;
+}
+
+.tag-codreview,
+.tag-codereview {
+	background-color: #fee;
+}
+
+.tag-codreview,
+.tag-codereview {
+	background-color:#000;
+	background-image:url(/webapp/time/wp-content/uploads/2010/04/binary_black.gif);
+	background-repeat:repeat-x;
+}
+
+.tag-codereview-complete{
+	background-color: #fff;
+	background-image:url(/webapp/time/wp-content/uploads/2011/01/codereview-complete.png);
+	background-repeat:repeat-x;
+}
+
+.tag-codreview{
+  background-image: url(http://www.plymouth.edu/webapp/time/wp-content/uploads/2010/07/cod.jpg);
+}
+
+.tag-codereview strong { color: red; }
+
+.tag-codreview blockquote,
+.tag-codereview blockquote {
+	background-color: transparent;
+}
+
+.tag-codereview.category-quote blockquote p {
+	background-color: #000;
+	border: 1px dotted #333;
+	text-shadow: 0 1px 0 #222;
+}
+
+#main .tag-codreview img.avatar,
+#main .tag-codereview img.avatar{
+	border: 1px solid #0f0;
+}
+
+.tag-codreview a, 
+.tag-codreview a:visited, 
+.tag-codreview h1 a:visited, 
+.tag-codreview a:active, 
+#main .tag-codreview .selected .actions a, 
+#main .tag-codreview .selected .actions a:link, 
+#main .tag-codreview .selected .actions a:visited, 
+#help .tag-codreview dt,
+.tag-codereview a, 
+.tag-codereview a:visited, 
+.tag-codereview h1 a:visited, 
+.tag-codereview a:active, 
+#main .tag-codereview .selected .actions a, 
+#main .tag-codereview .selected .actions a:link, 
+#main .tag-codereview .selected .actions a:visited, 
+#help .tag-codereview dt{
+	color: #0f0;
+}
+
+.tag-codreview a:hover, 
+.tag-codreview h1 a:hover, 
+#main .tag-codreview .selected .actions a:hover,
+.tag-codereview a:hover, 
+.tag-codereview h1 a:hover, 
+#main .tag-codereview .selected .actions a:hover{
+	color: #0f0;
+}
+
+#main .tag-codreview span.meta,
+#main .tag-codereview span.meta{
+	color: #999;
+}
+
+.tag-codreview .postcontent,
+.tag-codereview .postcontent{
+	color: #555;
+}
+
+#main .tag-codreview p, 
+#main .tag-codreview ul, 
+#main .tag-codreview ol,
+#main .tag-codereview p, 
+#main .tag-codereview ul, 
+#main .tag-codereview ol{
+	color: #ccc;
+}
+
+#main ul#postlist .tag-codreview ul li,
+#main ul#postlist .tag-codereview ul li{
+	border-top: 1px solid #222;
+}
+
+code { /*background-color: transparent;*/ }
+
+#main .tag-codreview #respond,
+#main .tag-codereview #respond { background-color: #111; }
+
+#main #postlist .tag-codereview .commentlist li.bypostauthor {
+	border-top-color: #333;
+}
