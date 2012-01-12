@@ -75,6 +75,14 @@ $('ul#postlist .tag-protips.tag-command-line-protip, ul#postlist .tag-protips.ta
 	.attr('title', 'Command Line Pro Tip')
 	.html('&#10026;'); // circled star
 
+$('ul#postlist .tag-protips.tag-database-protip, ul#postlist .tag-protips.tag-oracle-protip, ul#postlist .tag-protips.tag-mysql-protip')
+	.find('.what')
+	.html('Database')
+	.end()
+	.find('.accent')
+	.attr('title', 'Database Pro Tip')
+	.html('&#9638;'); // hash box
+
 $('ul#postlist .tag-protips.tag-vim-protip')
 	.find('.what')
 	.html('VIM')
