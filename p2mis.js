@@ -60,14 +60,14 @@ var a = $('<a href="#">Enable desktop notifications</a>.').bind('click', functio
 });
 $('#footer p').append(a);
 
-$('ul#postlist .tag-protips').prepend('<h2 class="protip"><span class="accent">&#10144;</span> Ultra Awesome <span class="what"></span> Pro Tip:</h2>');
-$('ul#postlist .tag-protips.tag-php-protip')
+$('ul#postlist .tag-protip').prepend('<h2 class="protip"><span class="accent">&#10144;</span> Ultra Awesome <span class="what"></span> Pro Tip:</h2>');
+$('ul#postlist .tag-protip.tag-vim')
 	.find('.what')
 	.html('PHP')
 	.end()
 	.attr('title', 'PHP Pro Tip');
 
-$('ul#postlist .tag-protips.tag-command-line-protip, ul#postlist .tag-protips.tag-unix-protip, ul#postlist .tag-protips.tag-linux-protip')
+$('ul#postlist .tag-protip.tag-vim, ul#postlist .tag-protip.tag-unix, ul#postlist .tag-protip.tag-linux')
 	.find('.what')
 	.html('Command Line')
 	.end()
@@ -75,7 +75,7 @@ $('ul#postlist .tag-protips.tag-command-line-protip, ul#postlist .tag-protips.ta
 	.attr('title', 'Command Line Pro Tip')
 	.html('&#9000;'); // keyboard
 
-$('ul#postlist .tag-protips.tag-database-protip, ul#postlist .tag-protips.tag-oracle-protip, ul#postlist .tag-protips.tag-mysql-protip')
+$('ul#postlist .tag-protip.tag-database, ul#postlist .tag-protip.tag-oracle, ul#postlist .tag-protip.tag-mysql')
 	.find('.what')
 	.html('Database')
 	.end()
@@ -83,7 +83,7 @@ $('ul#postlist .tag-protips.tag-database-protip, ul#postlist .tag-protips.tag-or
 	.attr('title', 'Database Pro Tip')
 	.html('&#9638;'); // hash box
 
-$('ul#postlist .tag-protips.tag-vim-protip')
+$('ul#postlist .tag-protip.tag-vim')
 	.find('.what')
 	.html('VIM')
 	.end()
@@ -91,7 +91,7 @@ $('ul#postlist .tag-protips.tag-vim-protip')
 	.attr('title', 'VIM Pro Tip')
 	.html('&#9998;'); // pencil
 
-$('ul#postlist .tag-protips.tag-git-protip')
+$('ul#postlist .tag-protip.tag-git')
 	.find('.what')
 	.html('Git')
 	.end()
@@ -99,7 +99,7 @@ $('ul#postlist .tag-protips.tag-git-protip')
 	.attr('title', 'Git Pro Tip')
 	.html('&#10026;'); // circled star
 
-$('ul#postlist .tag-protips.tag-warning')
+$('ul#postlist .tag-protip.tag-warning')
 	.find('.what')
 	.append(' Warning')
 	.end()
