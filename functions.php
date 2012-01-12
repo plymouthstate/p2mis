@@ -11,7 +11,15 @@ function p2mis_js() {
 	wp_register_script( 'p2mis_js', get_stylesheet_directory_uri() . '/p2mis.js', false, 1, true );
 	wp_enqueue_script( 'p2mis_js' );
 }
-add_action( 'init', 'p2mis_js' );
+add_action( 'wp_enqueue_scripts', 'p2mis_js' );
+
+function p2mis_js_early() {
+	// The WordPress 3.3.1 version of jquery.color.js substitues 'white' for 'transparent'
+	// during CSS animation. Use a newer, smarter release. https://github.com/jquery/jquery-color
+	wp_deregister_script( 'jquery-color' );
+	wp_register_script( 'jquery-color', get_stylesheet_directory_uri() . '/jquery.color.min.js', 'jquery', '2f7b194334' );
+}
+add_action( 'wp_enqueue_scripts', 'p2mis_js_early', 1 );
 
 function p2mis_stats() {
 	$codereview = get_term_by( 'slug', 'codereview', 'post_tag' );
