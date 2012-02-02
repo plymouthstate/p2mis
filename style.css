@@ -68,8 +68,21 @@ code, pre, tt {
 	content: "\27A0";
 }
 
+.tag-protip.tag-wordpress .what:before {
+	content: "WordPress";
+}
+
+.tag-protip.tag-p2 .what:before {
+	content: "P2";
+}
+
+.tag-protip.tag-p2 .accent:before,
+.tag-protip.tag-wordpress .accent:before {
+	content: "\2623";
+}
+
 .tag-protip.tag-vim .what:before {
-	content: "VIM"
+	content: "VIM";
 }
 
 .tag-protip.tag-vim .accent:before {
@@ -77,28 +90,47 @@ code, pre, tt {
 }
 
 .tag-protip.tag-git .what:before {
-	content: "Git"
+	content: "Git";
 }
 
 .tag-protip.tag-git .accent:before {
 	content: "\272A";
 }
 
+.tag-protip.tag-database .what:before {
+	content: "Database";
+}
+
+.tag-protip.tag-mysql .what:before {
+	content: "MySQL";
+}
+
+.tag-protip.tag-oracle .what:before {
+	content: "Oracle";
+}
+
+.tag-protip.tag-database .accent:before,
+.tag-protip.tag-mysql .accent:before,
+.tag-protip.tag-oracle .accent:before {
+	content: "\25A6";
+}
+
 .tag-protip.tag-unix .what:before,
 .tag-protip.tag-linux .what:before {
-	content: "Command Line"
+	content: "Command Line";
 }
 
 .tag-protip.tag-unix .accent:before,
 .tag-protip.tag-linux .accent:before {
-	content: "\2328"
+	content: "\2328";
 }
 
 .tag-protip.tag-php .what:before {
-	content: "PHP"
+	content: "PHP";
 }
 
 .tag-protip.tag-php .accent:before {
+	content: "\2645";
 }
 
 .tag-protip.tag-warning .what:before {
