@@ -70,5 +70,13 @@ function p2mis_comment_markdown( $text ) {
 add_filter( 'comment_text', 'p2mis_comment_markdown', 1 );
 add_filter( 'the_content', 'p2mis_comment_markdown', 1 );
 
-add_filter( 'p2_add_component_post-list-creator', '__return_false' );
-add_filter( 'p2_add_component_comment-list-creator', '__return_false' );
+/**
+ * Allow list creators, but don't save converted markup into the database.
+ */
+function p2mis_safe_save() {
+	global $p2;
+
+	remove_filter( 'content_save_pre', array( $p2->components[ 'post-list-creator' ], 'parse_list' ), 11 );
+	remove_filter( 'pre_comment_content', array( $p2->components[ 'comment-list-creator' ], 'parse_list' ) );
+}
+add_action( 'init', 'p2mis_safe_save' );
