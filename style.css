@@ -40,6 +40,14 @@ code, pre, tt {
 	padding-right: 14px;
 }
 
+.commentlist .children li {
+	margin-left: 1em;
+}
+
+.commentlist .children .comment {
+	margin-left: 47px;
+}
+
 .post.tag-codereview code, .post.tag-codereview pre, .post.tag-codereview tt{
 	background: #222;
 }
